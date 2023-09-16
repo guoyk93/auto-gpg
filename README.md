@@ -21,7 +21,7 @@ Write configuration file `~/.auto-gpg`
 
 **Execute `auto-gpg`**
 
-`auto-gpg` invokes `gpg` command with `--homedir` option, and the value of `--homedir` is determined by the configuration file above.
+`auto-gpg` invokes `gpg` command with `GNUPGHOME` environment variable, and the value of `GNUPGHOME` is determined by the configuration file above.
 
 ```shell
 auto-gpg -k
