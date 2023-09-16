@@ -1,6 +1,7 @@
 import os
-from os import path
 import shutil
+
+from os import path
 
 
 def main():
@@ -29,7 +30,7 @@ def main():
 
     # set GNUPGHOME
     if home is None:
-        print("auto-gpg: no GNUPGHOME found for "+cwd)
+        print("auto-gpg: no GNUPGHOME rule found for "+cwd)
     else:
         print("auto-gpg: setting GNUPGHOME to "+home)
         os.putenv("GNUPGHOME", home)
